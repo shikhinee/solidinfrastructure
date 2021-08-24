@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.head {
+    border-bottom: .1rem solid #bbb;
+
+    & .column {
+        &:not(:last-of-type) {
+            border-right: .1rem solid #bbb;
+        }
+    }
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    height: 8rem;
+
+    &:nth-child(odd) {
+        background-color: #ddd;
+    }
+}
+
+.column {
+    width: 100%;
+    padding: 0 2.4rem;
+}
+
+.action {
+    &:not(:last-of-type) {
+        margin-right: 1.6rem;
+    }
+}
